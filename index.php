@@ -78,7 +78,7 @@ $user = $_COOKIE['usernameFm'];
                 </li>
             </ul>
             <?php
-            $d = dir("/");
+            $d = dir("/var/www/html");
             while (($file = $d->read()) !== false){ 
             $type = filetype($d->path.$file);
             if($type=="dir"){
